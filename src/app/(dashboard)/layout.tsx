@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Menu from "@/components/Menu";
+import Navbar from "@/components/navbar";
 
 
 export default function Dashboard_Layout({
@@ -23,7 +24,11 @@ export default function Dashboard_Layout({
 
      
           {/* Right */}
-          <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">r</div>
+          <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">
+
+
+          <Navbar/>
+          </div>
 
 
 
