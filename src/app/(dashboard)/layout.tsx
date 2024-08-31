@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Menu from "@/components/Menu";
 import Navbar from "@/components/navbar";
+import AdminPage from "./admin/page";
+import Image from "next/image";
+import StudentPage from "./student/page";
 
 
 export default function Dashboard_Layout({
@@ -11,9 +14,9 @@ export default function Dashboard_Layout({
     return (
         <div className="h-screen flex">
            {/* Left */}
-           <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-red-200 p-4">
+           <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4 border-r-2">
             <Link href="/" className="flex items-center justify-center lg:justify-start gap-2">
-            <img src="logo.png" alt="logo" width={32} height={32}/>
+            <Image src="/logo.png" alt="logo" width={32} height={32}/>
             <span className="hidden lg:block">
               Sally School
 
@@ -24,10 +27,11 @@ export default function Dashboard_Layout({
 
      
           {/* Right */}
-          <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-blue-200">
+          <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%]">
 
 
           <Navbar/>
+          {children}
           </div>
 
 
