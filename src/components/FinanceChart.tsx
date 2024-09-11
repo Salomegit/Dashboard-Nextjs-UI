@@ -109,4 +109,4 @@ const FinanceChart = () => {
       </ResponsiveContainer>
 </div>
   )}
-export default FinanceChart
+export default FinanceChart 
