@@ -16,7 +16,7 @@ const handleOnChangeView = (selectedView:View) => {
     
 
   return (
-    <div>
+    
       <Calendar
         localizer={localizer}
         events={calendarEvents}
@@ -26,8 +26,11 @@ const handleOnChangeView = (selectedView:View) => {
         view={view}
         onView={handleOnChangeView}
         style={{ height: "98%" }}
+        min={new Date(2025,1,0,7,0,0)}
+        max={new Date(2025,1,0,18,0,0)}
+
       />
-    </div>
+    
   );
 };
 
